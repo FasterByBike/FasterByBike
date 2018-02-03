@@ -12,40 +12,19 @@ knitr::opts_chunk$set(
 ```
 # FasterByBike
 
-The goal of FasterByBike is to provide 
+The goal of FasterByBike is to provide evidence to improve the effectiveness of campaigns to get people cycling.
+Promoting cycling is more effective when people know they will get tangible benefits.
+Time is money so by focussing investment in areas where cycle trips would be faster, local authorities can use precious cycle training resources in places where people are most likely to respond: where it's #FasterByBike.
 
-Blurb ...
+To see an interactive map with data on car vs bike times see here: http://rpubs.com/RobinLovelace/355636
 
-Images
+Below is a graph showing cycle times vs car driving times in Manchester for the to 50 MSOA to MSOA commuter routes, representing 21,000 people.
+<!-- sum(l$all) -->
+Of these 50 routes only along 7 would cycling be faster for traffic conditions (on Saturday morning).
+Around these 7 routes, in this simple scenario, the investment should be prioritised.
 
-```{r}
-# set-up
-library(gmapsdistance)
-library(tidyverse)
-library(lubridate)
-library(osmdata)
-library(sf)
-library(stplanr)
-library(tmap)
-tmap_mode("view")
 
-manchester = getbb("Manchester", format_out = "sf_polygon")
-# get data on transport:
-u_l = "https://github.com/npct/pct-outputs-regional-notR/raw/master/commute/msoa/greater-manchester/l.geojson"
-download.file(u_l, "l.geojson")
-l = read_sf("l.geojson")
-l_manchester = l[manchester, ]
-names(l)
-l_top = l_manchester %>% 
-  filter(rf_dist_km > 1, rf_dist_km < 8) %>% 
-  top_n(n = 10, wt = all)
-qtm(l_top) +
-  qtm(manchester)
-test_time = ymd_hm("2018-02-02 08:30")
-D = as.numeric(test_time)
-dist_google(from = "Chorlton, UK", to = "Bright Building, Manchester", mode = "driving", arrival_time = "2018-02-02 09:00")
-"
-
-"
+```{r, echo=FALSE}
+knitr::include_graphics("figures/scatterplot-bike-car-time.png")
 ```
 
