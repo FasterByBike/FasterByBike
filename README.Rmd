@@ -1,0 +1,51 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+# FasterByBike
+
+The goal of FasterByBike is to provide 
+
+Blurb ...
+
+Images
+
+```{r}
+# set-up
+library(gmapsdistance)
+library(tidyverse)
+library(lubridate)
+library(osmdata)
+library(sf)
+library(stplanr)
+library(tmap)
+tmap_mode("view")
+
+manchester = getbb("Manchester", format_out = "sf_polygon")
+# get data on transport:
+u_l = "https://github.com/npct/pct-outputs-regional-notR/raw/master/commute/msoa/greater-manchester/l.geojson"
+download.file(u_l, "l.geojson")
+l = read_sf("l.geojson")
+l_manchester = l[manchester, ]
+names(l)
+l_top = l_manchester %>% 
+  filter(rf_dist_km > 1, rf_dist_km < 8) %>% 
+  top_n(n = 10, wt = all)
+qtm(l_top) +
+  qtm(manchester)
+test_time = ymd_hm("2018-02-02 08:30")
+D = as.numeric(test_time)
+dist_google(from = "Chorlton, UK", to = "Bright Building, Manchester", mode = "driving", arrival_time = "2018-02-02 09:00")
+"
+
+"
+```
+
