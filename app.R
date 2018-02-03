@@ -6,14 +6,15 @@ library(sf)
 
 cycle_infra = read_sf("data/tfgm-cycle-infra.geojson")
 l = read_sf("data/routes_car.geojson")
-l$Minutes = l$car_time - l$bicycle_time
+cent = st_centroid(l)
+l$Minutes = l$car_time - l$bicycle_time + 8
 schools = load("data/Schools.Rdata")
 
 ui <- bootstrapPage(
   tags$style(type = "text/css", "html, body {width:100%;height:100%}"),
   leafletOutput("map", width = "100%", height = "100%"),
   absolutePanel(top = 10, right = 10,
-                sliderInput("range", "Minutes saved", -10, 10,
+                sliderInput("range", "Minutes saved", -1, 15,
                             value = c(0, 5), step = 0.1
                 ),
                 selectInput("purpose", "Journey Purpose",
@@ -29,8 +30,8 @@ server <- function(input, output, session) {
     # Use leaflet() here, and only include aspects of the map that
     # won't need to change dynamically (at least, not unless the
     # entire map is being torn down and recreated).
-    leaflet() %>% addTiles() %>%
-      addPolylines(data = l[l$Minutes > input$range[1] & l$Minutes < input$range[2], ], group = "l")
+    leaflet() %>% addProviderTiles(provider = "CartoDB.Positron") %>%
+      setView(lng = -2.24, 53.48, zoom = 13)
   })
   
   # Incremental changes to the map (in this case, replacing the
@@ -38,15 +39,21 @@ server <- function(input, output, session) {
   # an observer. Each independent set of things that can change
   # should be managed in its own observer.
   observe({
-    proxy = leafletProxy("map")
+    proxy = leafletProxy("map") %>% 
+      clearShapes() %>% 
+      clearMarkers() %>% 
+      addPolylines(data = l[l$Minutes > input$range[1] & l$Minutes < input$range[2], ], group = "l", color = ) %>% 
+      addPolylines(data = cycle_infra, group = "infra", color = "grey") %>% 
+      addLayersControl(
+        overlayGroups = c("infra", "l"),
+        options = layersControlOptions(collapsed = FALSE)
+      ) %>% 
+      hideGroup("infra")
+      
     if(input$purpose != "Commuting") {
       proxy %>% 
-        addCircleMarkers(lng = School.data$lon, lat = School.data$lat) %>% 
-        addPolylines(data = cycle_infra, group = "infra") %>%
-        addLayersControl(
-          overlayGroups = c("infra", "l"),
-          options = layersControlOptions(collapsed = FALSE)
-        )
+        clearShapes() %>% 
+        addCircleMarkers(lng = School.data$lon, lat = School.data$lat, group = "school")
        }
   })
 
