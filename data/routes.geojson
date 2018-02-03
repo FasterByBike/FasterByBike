@@ -1,57 +1,1262 @@
 {
-"type": "FeatureCollection",
-"name": "routes",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "all": 279, "car_driver": 108, "bicycle": 5, "foot": 4, "bus": 123, "car_time": 12.216666666666667, "bicycle_time": 21.83 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.17015837720214, 53.516599553587469 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 305, "car_driver": 89, "bicycle": 9, "foot": 11, "bus": 154, "car_time": 8.25, "bicycle_time": 11.92 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.214736242311687, 53.515286226409032 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 287, "car_driver": 72, "bicycle": 5, "foot": 10, "bus": 177, "car_time": 11.65, "bicycle_time": 15.35 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.195153285220327, 53.512744027912383 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 327, "car_driver": 97, "bicycle": 8, "foot": 25, "bus": 96, "car_time": 8.1666666666666661, "bicycle_time": 13.85 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.237529101715254, 53.510893137521592 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 313, "car_driver": 127, "bicycle": 4, "foot": 116, "bus": 33, "car_time": 4.416666666666667, "bicycle_time": 5.55 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.237529101715254, 53.510893137521592 ], [ -2.246110168310247, 53.501468109124403 ] ] } },
-{ "type": "Feature", "properties": { "all": 606, "car_driver": 62, "bicycle": 20, "foot": 371, "bus": 116, "car_time": 4.833333333333333, "bicycle_time": 5.53 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.216822664832908, 53.484212742648687 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 430, "car_driver": 40, "bicycle": 18, "foot": 301, "bus": 55, "car_time": 7.0166666666666666, "bicycle_time": 6.28 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.216822664832908, 53.484212742648687 ], [ -2.232862328607008, 53.477140543156089 ] ] } },
-{ "type": "Feature", "properties": { "all": 295, "car_driver": 120, "bicycle": 17, "foot": 80, "bus": 49, "car_time": 7.7166666666666668, "bicycle_time": 12.33 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.191048316171929, 53.48000748352419 ], [ -2.167433280271433, 53.470002426655611 ] ] } },
-{ "type": "Feature", "properties": { "all": 328, "car_driver": 67, "bicycle": 8, "foot": 31, "bus": 205, "car_time": 10.0, "bicycle_time": 14.32 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.191048316171929, 53.48000748352419 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 324, "car_driver": 53, "bicycle": 32, "foot": 196, "bus": 34, "car_time": 9.3333333333333339, "bicycle_time": 8.08 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.222854029672662, 53.46734513662107 ], [ -2.244003706850628, 53.464853508741456 ] ] } },
-{ "type": "Feature", "properties": { "all": 463, "car_driver": 67, "bicycle": 37, "foot": 259, "bus": 81, "car_time": 6.9333333333333336, "bicycle_time": 8.27 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.222854029672662, 53.46734513662107 ], [ -2.211538397511017, 53.457809879489105 ] ] } },
-{ "type": "Feature", "properties": { "all": 277, "car_driver": 46, "bicycle": 24, "foot": 128, "bus": 73, "car_time": 8.9, "bicycle_time": 10.1 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.222854029672662, 53.46734513662107 ], [ -2.215467978294641, 53.452511843837044 ] ] } },
-{ "type": "Feature", "properties": { "all": 334, "car_driver": 41, "bicycle": 24, "foot": 120, "bus": 138, "car_time": 11.9, "bicycle_time": 14.47 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.222854029672662, 53.46734513662107 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 458, "car_driver": 31, "bicycle": 30, "foot": 278, "bus": 104, "car_time": 5.95, "bicycle_time": 6.53 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.222854029672662, 53.46734513662107 ], [ -2.232862328607008, 53.477140543156089 ] ] } },
-{ "type": "Feature", "properties": { "all": 464, "car_driver": 40, "bicycle": 26, "foot": 198, "bus": 185, "car_time": 13.466666666666667, "bicycle_time": 17.12 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.244003706850628, 53.464853508741456 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 321, "car_driver": 42, "bicycle": 27, "foot": 137, "bus": 105, "car_time": 7.3666666666666663, "bicycle_time": 10.83 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.244003706850628, 53.464853508741456 ], [ -2.232862328607008, 53.477140543156089 ] ] } },
-{ "type": "Feature", "properties": { "all": 387, "car_driver": 57, "bicycle": 31, "foot": 31, "bus": 258, "car_time": 13.75, "bicycle_time": 20.13 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.211538397511017, 53.457809879489105 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 350, "car_driver": 31, "bicycle": 28, "foot": 25, "bus": 261, "car_time": 17.116666666666667, "bicycle_time": 21.68 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.231463889351173, 53.453419174269072 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 342, "car_driver": 31, "bicycle": 17, "foot": 29, "bus": 255, "car_time": 16.483333333333334, "bicycle_time": 22.27 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.215467978294641, 53.452511843837044 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 283, "car_driver": 62, "bicycle": 39, "foot": 12, "bus": 159, "car_time": 18.1, "bicycle_time": 24.97 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.261495487507671, 53.450549180488466 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 387, "car_driver": 88, "bicycle": 55, "foot": 13, "bus": 211, "car_time": 19.316666666666666, "bicycle_time": 29.02 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.278797922802966, 53.445520681598595 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 296, "car_driver": 66, "bicycle": 38, "foot": 12, "bus": 167, "car_time": 13.216666666666667, "bicycle_time": 23.02 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.278797922802966, 53.445520681598595 ], [ -2.232862328607008, 53.477140543156089 ] ] } },
-{ "type": "Feature", "properties": { "all": 308, "car_driver": 88, "bicycle": 17, "foot": 19, "bus": 171, "car_time": 16.9, "bicycle_time": 24.9 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.243212985784955, 53.445661351698632 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 424, "car_driver": 41, "bicycle": 11, "foot": 16, "bus": 338, "car_time": 18.65, "bicycle_time": 28.6 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.217436205966551, 53.442831949049456 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 369, "car_driver": 45, "bicycle": 13, "foot": 20, "bus": 249, "car_time": 21.266666666666666, "bicycle_time": 30.48 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.215227419705657, 53.436798198560666 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 276, "car_driver": 60, "bicycle": 24, "foot": 3, "bus": 176, "car_time": 20.733333333333334, "bicycle_time": 32.4 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.234894525757721, 53.430299673731881 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 487, "car_driver": 208, "bicycle": 19, "foot": 167, "bus": 46, "car_time": 7.166666666666667, "bicycle_time": 9.38 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.282305438018461, 53.396914048431604 ], [ -2.283279739345723, 53.383135613021253 ] ] } },
-{ "type": "Feature", "properties": { "all": 365, "car_driver": 102, "bicycle": 23, "foot": 160, "bus": 46, "car_time": 3.85, "bicycle_time": 4.83 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.257412067500416, 53.391146502306448 ], [ -2.265632000695942, 53.385550701940183 ] ] } },
-{ "type": "Feature", "properties": { "all": 325, "car_driver": 168, "bicycle": 18, "foot": 29, "bus": 61, "car_time": 8.0166666666666675, "bicycle_time": 12.35 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.257412067500416, 53.391146502306448 ], [ -2.283279739345723, 53.383135613021253 ] ] } },
-{ "type": "Feature", "properties": { "all": 463, "car_driver": 212, "bicycle": 20, "foot": 25, "bus": 146, "car_time": 7.1166666666666663, "bicycle_time": 10.75 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.257412067500416, 53.391146502306448 ], [ -2.265982471735848, 53.373291319290431 ] ] } },
-{ "type": "Feature", "properties": { "all": 381, "car_driver": 158, "bicycle": 14, "foot": 84, "bus": 74, "car_time": 6.1833333333333336, "bicycle_time": 8.68 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.265632000695942, 53.385550701940183 ], [ -2.283279739345723, 53.383135613021253 ] ] } },
-{ "type": "Feature", "properties": { "all": 532, "car_driver": 171, "bicycle": 21, "foot": 109, "bus": 173, "car_time": 6.35, "bicycle_time": 7.45 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.265632000695942, 53.385550701940183 ], [ -2.265982471735848, 53.373291319290431 ] ] } },
-{ "type": "Feature", "properties": { "all": 652, "car_driver": 275, "bicycle": 49, "foot": 76, "bus": 171, "car_time": 6.5666666666666664, "bicycle_time": 10.4 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.283279739345723, 53.383135613021253 ], [ -2.265982471735848, 53.373291319290431 ] ] } },
-{ "type": "Feature", "properties": { "all": 524, "car_driver": 248, "bicycle": 44, "foot": 88, "bus": 86, "car_time": 5.8166666666666664, "bicycle_time": 6.43 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.249876199968754, 53.377863772011324 ], [ -2.265982471735848, 53.373291319290431 ] ] } },
-{ "type": "Feature", "properties": { "all": 325, "car_driver": 58, "bicycle": 8, "foot": 68, "bus": 159, "car_time": 9.3666666666666671, "bicycle_time": 13.75 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.258668173353092, 53.503347529152329 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 1230, "car_driver": 61, "bicycle": 31, "foot": 1014, "bus": 75, "car_time": 10.466666666666667, "bicycle_time": 11.93 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.258481269415877, 53.487094050848945 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 468, "car_driver": 31, "bicycle": 16, "foot": 350, "bus": 44, "car_time": 11.216666666666667, "bicycle_time": 13.07 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.258481269415877, 53.487094050848945 ], [ -2.232862328607008, 53.477140543156089 ] ] } },
-{ "type": "Feature", "properties": { "all": 430, "car_driver": 40, "bicycle": 6, "foot": 354, "bus": 14, "car_time": 8.4, "bicycle_time": 7.95 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.258481269415877, 53.487094050848945 ], [ -2.252205972369673, 53.475310921600993 ] ] } },
-{ "type": "Feature", "properties": { "all": 614, "car_driver": 89, "bicycle": 33, "foot": 153, "bus": 41, "car_time": 16.05, "bicycle_time": 19.8 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.279738445049275, 53.473750623608396 ], [ -2.234047956314288, 53.487113045807774 ] ] } },
-{ "type": "Feature", "properties": { "all": 353, "car_driver": 67, "bicycle": 19, "foot": 41, "bus": 21, "car_time": 10.366666666666667, "bicycle_time": 19.07 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.279738445049275, 53.473750623608396 ], [ -2.232862328607008, 53.477140543156089 ] ] } },
-{ "type": "Feature", "properties": { "all": 346, "car_driver": 77, "bicycle": 12, "foot": 115, "bus": 9, "car_time": 8.8166666666666664, "bicycle_time": 9.35 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.279738445049275, 53.473750623608396 ], [ -2.252205972369673, 53.475310921600993 ] ] } },
-{ "type": "Feature", "properties": { "all": 1122, "car_driver": 41, "bicycle": 18, "foot": 990, "bus": 41, "car_time": 8.3833333333333329, "bicycle_time": 6.57 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.234047956314288, 53.487113045807774 ], [ -2.232862328607008, 53.477140543156089 ] ] } },
-{ "type": "Feature", "properties": { "all": 505, "car_driver": 43, "bicycle": 4, "foot": 371, "bus": 63, "car_time": 6.5166666666666666, "bicycle_time": 10.68 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.234047956314288, 53.487113045807774 ], [ -2.23611548449104, 53.5010287471437 ] ] } },
-{ "type": "Feature", "properties": { "all": 477, "car_driver": 10, "bicycle": 10, "foot": 393, "bus": 49, "car_time": 8.7166666666666668, "bicycle_time": 10.85 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.234047956314288, 53.487113045807774 ], [ -2.243220026034535, 53.471213109497029 ] ] } },
-{ "type": "Feature", "properties": { "all": 364, "car_driver": 61, "bicycle": 11, "foot": 158, "bus": 103, "car_time": 7.2833333333333332, "bicycle_time": 11.5 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.234047956314288, 53.487113045807774 ], [ -2.246110168310247, 53.501468109124403 ] ] } },
-{ "type": "Feature", "properties": { "all": 495, "car_driver": 40, "bicycle": 16, "foot": 375, "bus": 34, "car_time": 10.45, "bicycle_time": 14.75 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.234047956314288, 53.487113045807774 ], [ -2.260600491711047, 53.470566685382636 ] ] } },
-{ "type": "Feature", "properties": { "all": 803, "car_driver": 31, "bicycle": 13, "foot": 719, "bus": 19, "car_time": 10.533333333333333, "bicycle_time": 11.08 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.234047956314288, 53.487113045807774 ], [ -2.252205972369673, 53.475310921600993 ] ] } },
-{ "type": "Feature", "properties": { "all": 409, "car_driver": 21, "bicycle": 5, "foot": 342, "bus": 34, "car_time": 7.85, "bicycle_time": 5.93 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.232862328607008, 53.477140543156089 ], [ -2.243220026034535, 53.471213109497029 ] ] } },
-{ "type": "Feature", "properties": { "all": 530, "car_driver": 37, "bicycle": 15, "foot": 432, "bus": 16, "car_time": 9.6, "bicycle_time": 7.62 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.232862328607008, 53.477140543156089 ], [ -2.252205972369673, 53.475310921600993 ] ] } },
-{ "type": "Feature", "properties": { "all": 309, "car_driver": 18, "bicycle": 7, "foot": 267, "bus": 7, "car_time": 5.0, "bicycle_time": 4.03 }, "geometry": { "type": "LineString", "coordinates": [ [ -2.243220026034535, 53.471213109497029 ], [ -2.252205972369673, 53.475310921600993 ] ] } }
-]
+    "type": "FeatureCollection",
+    "name": "routes",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 279,
+                "car_driver": 108,
+                "bicycle": 5,
+                "foot": 4,
+                "bus": 123,
+                "car_time": 12.216666666666667,
+                "bicycle_time": 21.83
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.17015837720214,
+                        53.516599553587469
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 305,
+                "car_driver": 89,
+                "bicycle": 9,
+                "foot": 11,
+                "bus": 154,
+                "car_time": 8.25,
+                "bicycle_time": 11.92
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.214736242311687,
+                        53.515286226409032
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 287,
+                "car_driver": 72,
+                "bicycle": 5,
+                "foot": 10,
+                "bus": 177,
+                "car_time": 11.65,
+                "bicycle_time": 15.35
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.195153285220327,
+                        53.512744027912383
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 327,
+                "car_driver": 97,
+                "bicycle": 8,
+                "foot": 25,
+                "bus": 96,
+                "car_time": 8.1666666666666661,
+                "bicycle_time": 13.85
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.237529101715254,
+                        53.510893137521592
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 313,
+                "car_driver": 127,
+                "bicycle": 4,
+                "foot": 116,
+                "bus": 33,
+                "car_time": 4.416666666666667,
+                "bicycle_time": 5.55
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.237529101715254,
+                        53.510893137521592
+                    ],
+                    [
+                        -2.246110168310247,
+                        53.501468109124403
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 606,
+                "car_driver": 62,
+                "bicycle": 20,
+                "foot": 371,
+                "bus": 116,
+                "car_time": 4.833333333333333,
+                "bicycle_time": 5.53
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.216822664832908,
+                        53.484212742648687
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 430,
+                "car_driver": 40,
+                "bicycle": 18,
+                "foot": 301,
+                "bus": 55,
+                "car_time": 7.0166666666666666,
+                "bicycle_time": 6.28
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.216822664832908,
+                        53.484212742648687
+                    ],
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 295,
+                "car_driver": 120,
+                "bicycle": 17,
+                "foot": 80,
+                "bus": 49,
+                "car_time": 7.7166666666666668,
+                "bicycle_time": 12.33
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.191048316171929,
+                        53.48000748352419
+                    ],
+                    [
+                        -2.167433280271433,
+                        53.470002426655611
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 328,
+                "car_driver": 67,
+                "bicycle": 8,
+                "foot": 31,
+                "bus": 205,
+                "car_time": 10.0,
+                "bicycle_time": 14.32
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.191048316171929,
+                        53.48000748352419
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 324,
+                "car_driver": 53,
+                "bicycle": 32,
+                "foot": 196,
+                "bus": 34,
+                "car_time": 9.3333333333333339,
+                "bicycle_time": 8.08
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.222854029672662,
+                        53.46734513662107
+                    ],
+                    [
+                        -2.244003706850628,
+                        53.464853508741456
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 463,
+                "car_driver": 67,
+                "bicycle": 37,
+                "foot": 259,
+                "bus": 81,
+                "car_time": 6.9333333333333336,
+                "bicycle_time": 8.27
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.222854029672662,
+                        53.46734513662107
+                    ],
+                    [
+                        -2.211538397511017,
+                        53.457809879489105
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 277,
+                "car_driver": 46,
+                "bicycle": 24,
+                "foot": 128,
+                "bus": 73,
+                "car_time": 8.9,
+                "bicycle_time": 10.1
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.222854029672662,
+                        53.46734513662107
+                    ],
+                    [
+                        -2.215467978294641,
+                        53.452511843837044
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 334,
+                "car_driver": 41,
+                "bicycle": 24,
+                "foot": 120,
+                "bus": 138,
+                "car_time": 11.9,
+                "bicycle_time": 14.47
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.222854029672662,
+                        53.46734513662107
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 458,
+                "car_driver": 31,
+                "bicycle": 30,
+                "foot": 278,
+                "bus": 104,
+                "car_time": 5.95,
+                "bicycle_time": 6.53
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.222854029672662,
+                        53.46734513662107
+                    ],
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 464,
+                "car_driver": 40,
+                "bicycle": 26,
+                "foot": 198,
+                "bus": 185,
+                "car_time": 13.466666666666667,
+                "bicycle_time": 17.12
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.244003706850628,
+                        53.464853508741456
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 321,
+                "car_driver": 42,
+                "bicycle": 27,
+                "foot": 137,
+                "bus": 105,
+                "car_time": 7.3666666666666663,
+                "bicycle_time": 10.83
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.244003706850628,
+                        53.464853508741456
+                    ],
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 387,
+                "car_driver": 57,
+                "bicycle": 31,
+                "foot": 31,
+                "bus": 258,
+                "car_time": 13.75,
+                "bicycle_time": 20.13
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.211538397511017,
+                        53.457809879489105
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 350,
+                "car_driver": 31,
+                "bicycle": 28,
+                "foot": 25,
+                "bus": 261,
+                "car_time": 17.116666666666667,
+                "bicycle_time": 21.68
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.231463889351173,
+                        53.453419174269072
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 342,
+                "car_driver": 31,
+                "bicycle": 17,
+                "foot": 29,
+                "bus": 255,
+                "car_time": 16.483333333333334,
+                "bicycle_time": 22.27
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.215467978294641,
+                        53.452511843837044
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 283,
+                "car_driver": 62,
+                "bicycle": 39,
+                "foot": 12,
+                "bus": 159,
+                "car_time": 18.1,
+                "bicycle_time": 24.97
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.261495487507671,
+                        53.450549180488466
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 387,
+                "car_driver": 88,
+                "bicycle": 55,
+                "foot": 13,
+                "bus": 211,
+                "car_time": 19.316666666666666,
+                "bicycle_time": 29.02
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.278797922802966,
+                        53.445520681598595
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 296,
+                "car_driver": 66,
+                "bicycle": 38,
+                "foot": 12,
+                "bus": 167,
+                "car_time": 13.216666666666667,
+                "bicycle_time": 23.02
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.278797922802966,
+                        53.445520681598595
+                    ],
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 308,
+                "car_driver": 88,
+                "bicycle": 17,
+                "foot": 19,
+                "bus": 171,
+                "car_time": 16.9,
+                "bicycle_time": 24.9
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.243212985784955,
+                        53.445661351698632
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 424,
+                "car_driver": 41,
+                "bicycle": 11,
+                "foot": 16,
+                "bus": 338,
+                "car_time": 18.65,
+                "bicycle_time": 28.6
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.217436205966551,
+                        53.442831949049456
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 369,
+                "car_driver": 45,
+                "bicycle": 13,
+                "foot": 20,
+                "bus": 249,
+                "car_time": 21.266666666666666,
+                "bicycle_time": 30.48
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.215227419705657,
+                        53.436798198560666
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 276,
+                "car_driver": 60,
+                "bicycle": 24,
+                "foot": 3,
+                "bus": 176,
+                "car_time": 20.733333333333334,
+                "bicycle_time": 32.4
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.234894525757721,
+                        53.430299673731881
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 487,
+                "car_driver": 208,
+                "bicycle": 19,
+                "foot": 167,
+                "bus": 46,
+                "car_time": 7.166666666666667,
+                "bicycle_time": 9.38
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.282305438018461,
+                        53.396914048431604
+                    ],
+                    [
+                        -2.283279739345723,
+                        53.383135613021253
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 365,
+                "car_driver": 102,
+                "bicycle": 23,
+                "foot": 160,
+                "bus": 46,
+                "car_time": 3.85,
+                "bicycle_time": 4.83
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.257412067500416,
+                        53.391146502306448
+                    ],
+                    [
+                        -2.265632000695942,
+                        53.385550701940183
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 325,
+                "car_driver": 168,
+                "bicycle": 18,
+                "foot": 29,
+                "bus": 61,
+                "car_time": 8.0166666666666675,
+                "bicycle_time": 12.35
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.257412067500416,
+                        53.391146502306448
+                    ],
+                    [
+                        -2.283279739345723,
+                        53.383135613021253
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 463,
+                "car_driver": 212,
+                "bicycle": 20,
+                "foot": 25,
+                "bus": 146,
+                "car_time": 7.1166666666666663,
+                "bicycle_time": 10.75
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.257412067500416,
+                        53.391146502306448
+                    ],
+                    [
+                        -2.265982471735848,
+                        53.373291319290431
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 381,
+                "car_driver": 158,
+                "bicycle": 14,
+                "foot": 84,
+                "bus": 74,
+                "car_time": 6.1833333333333336,
+                "bicycle_time": 8.68
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.265632000695942,
+                        53.385550701940183
+                    ],
+                    [
+                        -2.283279739345723,
+                        53.383135613021253
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 532,
+                "car_driver": 171,
+                "bicycle": 21,
+                "foot": 109,
+                "bus": 173,
+                "car_time": 6.35,
+                "bicycle_time": 7.45
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.265632000695942,
+                        53.385550701940183
+                    ],
+                    [
+                        -2.265982471735848,
+                        53.373291319290431
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 652,
+                "car_driver": 275,
+                "bicycle": 49,
+                "foot": 76,
+                "bus": 171,
+                "car_time": 6.5666666666666664,
+                "bicycle_time": 10.4
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.283279739345723,
+                        53.383135613021253
+                    ],
+                    [
+                        -2.265982471735848,
+                        53.373291319290431
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 524,
+                "car_driver": 248,
+                "bicycle": 44,
+                "foot": 88,
+                "bus": 86,
+                "car_time": 5.8166666666666664,
+                "bicycle_time": 6.43
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.249876199968754,
+                        53.377863772011324
+                    ],
+                    [
+                        -2.265982471735848,
+                        53.373291319290431
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 325,
+                "car_driver": 58,
+                "bicycle": 8,
+                "foot": 68,
+                "bus": 159,
+                "car_time": 9.3666666666666671,
+                "bicycle_time": 13.75
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.258668173353092,
+                        53.503347529152329
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 1230,
+                "car_driver": 61,
+                "bicycle": 31,
+                "foot": 1014,
+                "bus": 75,
+                "car_time": 10.466666666666667,
+                "bicycle_time": 11.93
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.258481269415877,
+                        53.487094050848945
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 468,
+                "car_driver": 31,
+                "bicycle": 16,
+                "foot": 350,
+                "bus": 44,
+                "car_time": 11.216666666666667,
+                "bicycle_time": 13.07
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.258481269415877,
+                        53.487094050848945
+                    ],
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 430,
+                "car_driver": 40,
+                "bicycle": 6,
+                "foot": 354,
+                "bus": 14,
+                "car_time": 8.4,
+                "bicycle_time": 7.95
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.258481269415877,
+                        53.487094050848945
+                    ],
+                    [
+                        -2.252205972369673,
+                        53.475310921600993
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 614,
+                "car_driver": 89,
+                "bicycle": 33,
+                "foot": 153,
+                "bus": 41,
+                "car_time": 16.05,
+                "bicycle_time": 19.8
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.279738445049275,
+                        53.473750623608396
+                    ],
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 353,
+                "car_driver": 67,
+                "bicycle": 19,
+                "foot": 41,
+                "bus": 21,
+                "car_time": 10.366666666666667,
+                "bicycle_time": 19.07
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.279738445049275,
+                        53.473750623608396
+                    ],
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 346,
+                "car_driver": 77,
+                "bicycle": 12,
+                "foot": 115,
+                "bus": 9,
+                "car_time": 8.8166666666666664,
+                "bicycle_time": 9.35
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.279738445049275,
+                        53.473750623608396
+                    ],
+                    [
+                        -2.252205972369673,
+                        53.475310921600993
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 1122,
+                "car_driver": 41,
+                "bicycle": 18,
+                "foot": 990,
+                "bus": 41,
+                "car_time": 8.3833333333333329,
+                "bicycle_time": 6.57
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ],
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 505,
+                "car_driver": 43,
+                "bicycle": 4,
+                "foot": 371,
+                "bus": 63,
+                "car_time": 6.5166666666666666,
+                "bicycle_time": 10.68
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ],
+                    [
+                        -2.23611548449104,
+                        53.5010287471437
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 477,
+                "car_driver": 10,
+                "bicycle": 10,
+                "foot": 393,
+                "bus": 49,
+                "car_time": 8.7166666666666668,
+                "bicycle_time": 10.85
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ],
+                    [
+                        -2.243220026034535,
+                        53.471213109497029
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 364,
+                "car_driver": 61,
+                "bicycle": 11,
+                "foot": 158,
+                "bus": 103,
+                "car_time": 7.2833333333333332,
+                "bicycle_time": 11.5
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ],
+                    [
+                        -2.246110168310247,
+                        53.501468109124403
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 495,
+                "car_driver": 40,
+                "bicycle": 16,
+                "foot": 375,
+                "bus": 34,
+                "car_time": 10.45,
+                "bicycle_time": 14.75
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ],
+                    [
+                        -2.260600491711047,
+                        53.470566685382636
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 803,
+                "car_driver": 31,
+                "bicycle": 13,
+                "foot": 719,
+                "bus": 19,
+                "car_time": 10.533333333333333,
+                "bicycle_time": 11.08
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.234047956314288,
+                        53.487113045807774
+                    ],
+                    [
+                        -2.252205972369673,
+                        53.475310921600993
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 409,
+                "car_driver": 21,
+                "bicycle": 5,
+                "foot": 342,
+                "bus": 34,
+                "car_time": 7.85,
+                "bicycle_time": 5.93
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ],
+                    [
+                        -2.243220026034535,
+                        53.471213109497029
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 530,
+                "car_driver": 37,
+                "bicycle": 15,
+                "foot": 432,
+                "bus": 16,
+                "car_time": 9.6,
+                "bicycle_time": 7.62
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.232862328607008,
+                        53.477140543156089
+                    ],
+                    [
+                        -2.252205972369673,
+                        53.475310921600993
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "all": 309,
+                "car_driver": 18,
+                "bicycle": 7,
+                "foot": 267,
+                "bus": 7,
+                "car_time": 5.0,
+                "bicycle_time": 4.03
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -2.243220026034535,
+                        53.471213109497029
+                    ],
+                    [
+                        -2.252205972369673,
+                        53.475310921600993
+                    ]
+                ]
+            }
+        }
+    ]
 }
