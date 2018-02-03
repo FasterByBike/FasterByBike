@@ -52,7 +52,7 @@ dir_google <- function(from = NA, to = NA, api = NA, mode = "transit" ){
 }
 
 
-lines <- readRDS("../FasterByBike/data/l.Rds")
+lines <- readRDS("../FasterByBike - Copy/data/l.Rds")
 lines <- st_as_sf(lines)
 names(lines)
 lines <- lines[,c("id","geo_code1","geo_code2","geo_name1",
@@ -167,3 +167,11 @@ rf <- st_as_sf(rf)
 st_crs(rf)
 rf <- rf[rf$id %in% lines.sub$id,]
 st_write(rf,"../FasterByBike/cycle.geojson")
+
+lines.sub$timesaved <- ifelse(lines.sub$fastest == "bike", (lines.sub$all * (lines.sub$cartimepark - lines.sub$biketime) * 2) / (60 * 60) ,0)
+summary(lines.sub$timesaved)
+
+sum(lines.sub$timesaved) / 24 /365 # total time saved if everybody cycled in years per year
+sum(lines.sub$all[lines.sub$fastest == "bike"])
+
+zones <- readRDS("../FasterByBike/data/z.Rds")
