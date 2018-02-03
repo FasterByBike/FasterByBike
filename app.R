@@ -5,9 +5,10 @@ library(RColorBrewer)
 library(sf)
 
 cycle_infra = read_sf("data/tfgm-cycle-infra.geojson")
-l = read_sf("data/routes_car.geojson")
-cent = st_centroid(l)
-l$Minutes = l$car_time - l$bicycle_time + 8
+routes_car = read_sf("data/routes_car.geojson")
+lines = read_sf("data/lines.geojson")
+cent = st_centroid(routes_car)
+routes_car$Minutes = routes_car$car_time - routes_car$bicycle_time + 8
 schools = load("data/Schools.Rdata")
 
 ui <- bootstrapPage(
@@ -19,8 +20,8 @@ ui <- bootstrapPage(
                 ),
                 selectInput("purpose", "Journey Purpose",
                             c("Commuting", "Travel to School")
-                ),
-                checkboxInput("legend", "Show legend", TRUE)
+                )
+                # checkboxInput("legend", "Show legend", TRUE)
   )
 )
 
@@ -42,18 +43,21 @@ server <- function(input, output, session) {
     proxy = leafletProxy("map") %>% 
       clearShapes() %>% 
       clearMarkers() %>% 
-      addPolylines(data = l[l$Minutes > input$range[1] & l$Minutes < input$range[2], ], group = "l", color = ) %>% 
-      addPolylines(data = cycle_infra, group = "infra", color = "grey") %>% 
-      addLayersControl(
-        overlayGroups = c("infra", "l"),
-        options = layersControlOptions(collapsed = FALSE)
-      ) %>% 
-      hideGroup("infra")
+      hideGroup("Cycle infrastructure")
       
-    if(input$purpose != "Commuting") {
+    if (input$purpose == "Commuting") {
+      proxy %>%
+        addPolylines(data = routes_car[routes_car$Minutes > input$range[1] & routes_car$Minutes < input$range[2], ], group = "Car routes", color = ) %>%
+        addPolylines(data = cycle_infra, group = "Cycle infrastructure", color = "grey") %>%
+        addLayersControl(
+          overlayGroups = c("Cycle infrastructure", "Car routes"),
+          options = layersControlOptions(collapsed = FALSE),
+          position = "topleft"
+        )
+    }
+    else if (input$purpose == "Travel to School") {
       proxy %>% 
-        clearShapes() %>% 
-        addCircleMarkers(lng = School.data$lon, lat = School.data$lat, group = "school")
+        addCircleMarkers(lng = School.data$lon, lat = School.data$lat, group = "Schools")
        }
   })
 
