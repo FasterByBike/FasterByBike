@@ -16,7 +16,7 @@ ui <- bootstrapPage(
   leafletOutput("map", width = "100%", height = "100%"),
   absolutePanel(top = 10, right = 10,
                 sliderInput("range", "Minutes saved", -1, 15,
-                            value = c(0, 5), step = 0.1
+                            value = c(0, 15), step = 0.1
                 ),
                 selectInput("purpose", "Journey Purpose",
                             c("Commuting", "Travel to School")
