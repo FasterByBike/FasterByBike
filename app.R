@@ -10,6 +10,7 @@ lines = read_sf("data/lines.geojson")
 lines_car = subset(lines, fastest == "car")
 lines_bicycle = subset(lines, fastest == "bike")
 lines_transit = subset(lines, fastest == "transit")
+mock_employees <- readLines("data/mock_employees.geojson") %>% paste(collapse = "\n")
 cent = st_centroid(routes_car)
 routes_car$Minutes = routes_car$car_time - routes_car$bicycle_time + 8
 schools = load("data/Schools.Rdata")
@@ -22,21 +23,23 @@ ui <- bootstrapPage(
                             value = c(0, 15), step = 0.1
                 ),
                 selectInput("purpose", "Journey Purpose",
-                            c("Commuting", "Travel to School")
+                            c("Commuting", "Travel to School", "Co-op Employees")
                 )
                 # checkboxInput("legend", "Show legend", TRUE)
   )
 )
 
 top500line <- function(proxy, data, name, colour) {
-  # Complains about invalid map parameter
-  # weightedLine <- function(data, proxy, name, color) {
-  #   addPolylines(map = proxy, data = data$geometry, group = paste("Top 500 by", name), color = colour, weight = data$all / 20000, opacity = 1)
-  # }
+  addPolylines(proxy, data = data, group = paste("Top 500 by", name), color = colour, weight = data$all / 20000, opacity = 1)
+}
 
-  # apply(data, 1, weightedLine, proxy, name, color)
-
-  addPolylines(proxy, data = data, group = paste("Top 500 by", name), color = colour, weight = 2, opacity = 1)
+layerControls <- function(proxy) {
+  addLayersControl(
+    map = proxy,
+    overlayGroups = c("Cycle infrastructure", "Car routes", "Top 500 by bike", "Top 500 by public transit", "Top 500 by car"),
+    options = layersControlOptions(collapsed = FALSE),
+    position = "topleft"
+  )
 }
 
 server <- function(input, output, session) {
@@ -57,6 +60,7 @@ server <- function(input, output, session) {
     proxy = leafletProxy("map") %>% 
       clearShapes() %>% 
       clearMarkers() %>% 
+      clearGeoJSON() %>%
       hideGroup(c("Cycle infrastructure", "Top 500 by bike", "Top 500 by public transit", "Top 500 by car"))
       
     if (input$purpose == "Commuting") {
@@ -66,16 +70,18 @@ server <- function(input, output, session) {
         top500line(lines_bicycle, "bike", "green") %>%
         top500line(lines_transit, "public transit", "yellow") %>%
         top500line(lines_car, "car", "red") %>%
-        addLayersControl(
-          overlayGroups = c("Cycle infrastructure", "Car routes", "Top 500 by bike", "Top 500 by public transit", "Top 500 by car"),
-          options = layersControlOptions(collapsed = FALSE),
-          position = "topleft"
-        )
+        layerControls()
     }
     else if (input$purpose == "Travel to School") {
       proxy %>% 
-        addCircleMarkers(lng = School.data$lon, lat = School.data$lat, group = "Schools")
-       }
+        addCircleMarkers(lng = School.data$lon, lat = School.data$lat, group = "Schools") %>%
+        layerControls()
+    }
+    else if (input$purpose == "Co-op Employees") {
+      proxy %>%
+        addGeoJSON(geojson = mock_employees) %>%
+        removeLayersControl()
+    }
   })
 
 }
